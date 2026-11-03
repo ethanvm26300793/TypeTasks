@@ -21,7 +21,6 @@ export function filterStatus(tasks: Task[], status: TaskStatus): Task[] {
     return tasks.filter(task => task.status === status);
 }
 
-// Your custom operation with correct types and logic
-export function countByStatus(tasks: Task[], status: TaskStatus): number {
-    return tasks.filter(task => task.status === status).length;
+export function deleteTask(tasks: Task[], id: number): Task[] {
+    return tasks.filter(task => task.id !== id);
 }
